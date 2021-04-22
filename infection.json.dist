@@ -1,0 +1,24 @@
+{
+    "timeout": 10,
+    "source": {
+        "directories": [
+            "src"
+        ],
+        "excludes": [
+            "DependencyInjection",
+            "EventListener",
+            "Resources",
+            "GoUnflocYourselfBundle.php"
+        ]
+    },
+    "logs": {
+        "text": "build/infection.log",
+        "summary": "build/summary.log",
+        "debug": "build/debug.log",
+        "perMutator": "build/per-mutator.md",
+        "badge": {
+            "branch": "master"
+        }
+    },
+    "testFramework":"phpspec"
+}

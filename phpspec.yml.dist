@@ -1,0 +1,17 @@
+formatter.name: pretty
+extensions:
+  FriendsOfPhpSpec\PhpSpec\CodeCoverage\CodeCoverageExtension:
+    blacklist:
+      - src/DependencyInjection
+      - src/EventListener
+      - src/Resources
+    blacklist_files:
+      - src/GoUnflocYourselfBundle.php
+    format:
+      - clover
+      - php
+      - text
+    output:
+      html: build/coverage
+      clover: build/logs/clover.xml
+      php: build/coverage.php
