@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace loophp\GoUnflocYourselfBundle\Tests\Functional\Controller;
+namespace loophp\GoUnflocYourselfBundle\Tests\Functional;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
