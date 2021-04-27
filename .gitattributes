@@ -9,4 +9,5 @@ grumphp.yml.dist export-ignore
 phpspec.yml.dist export-ignore
 /docs export-ignore
 /docker export-ignore
-docker-compose.yaml
+docker-compose.yaml export-ignore
+/src/Tests export-ignore

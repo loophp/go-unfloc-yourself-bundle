@@ -8,7 +8,8 @@
             "DependencyInjection",
             "EventListener",
             "Resources",
-            "GoUnflocYourselfBundle.php"
+            "GoUnflocYourselfBundle.php",
+            "Tests"
         ]
     },
     "logs": {

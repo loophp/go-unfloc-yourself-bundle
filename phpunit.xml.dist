@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- https://phpunit.readthedocs.io/en/latest/configuration.html -->
+<phpunit
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd"
+  backupGlobals="false"
+  colors="true"
+>
+  <coverage processUncoveredFiles="true">
+    <include>
+      <directory suffix=".php">src</directory>
+    </include>
+  </coverage>
+  <php>
+    <ini name="error_reporting" value="-1"/>
+    <server name="KERNEL_DIR" value="Tests/Fixtures/App/" />
+    <server name="KERNEL_CLASS" value="loophp\GoUnflocYourselfBundle\Tests\Fixtures\App\Kernel" />
+    <server name="SHELL_VERBOSITY" value="-1" />
+
+    <!-- ###+ symfony/framework-bundle ### -->
+    <env name="APP_ENV" value="dev"/>
+    <env name="APP_SECRET" value="a82794aa0495c5d5203399cacc37909a"/>
+    <!-- ###- symfony/framework-bundle ### -->
+  </php>
+  <testsuites>
+    <testsuite name="Project Test Suite">
+      <directory>src/Tests</directory>
+    </testsuite>
+  </testsuites>
+  <!-- Run `composer require symfony/phpunit-bridge` before enabling this extension -->
+  <!--
+    <listeners>
+        <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener" />
+    </listeners>
+    -->
+  <!-- Run `composer require symfony/panther` before enabling this extension -->
+  <!--
+    <extensions>
+        <extension class="Symfony\Component\Panther\ServerExtension" />
+    </extensions>
+    -->
+</phpunit>
