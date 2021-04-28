@@ -7,6 +7,7 @@ parameters:
     extra_tasks:
         phpspec:
             verbose: true
+        behat: ~
         phpunit: ~
         infection:
             threads: 1
