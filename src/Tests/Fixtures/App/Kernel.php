@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace loophp\GoUnflocYourselfBundle\Tests\Fixtures\App;
 
-use Foo\TestBundle\FooTestBundle;
+use FriendsOfBehat\SymfonyExtension\Bundle\FriendsOfBehatSymfonyExtensionBundle;
 use loophp\GoUnflocYourselfBundle\GoUnflocYourselfBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
@@ -24,6 +24,7 @@ final class Kernel extends BaseKernel
     public function registerBundles()
     {
         return [
+            new FriendsOfBehatSymfonyExtensionBundle(),
             new GoUnflocYourselfBundle(),
             new FrameworkBundle(),
         ];
